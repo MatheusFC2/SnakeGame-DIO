@@ -10,27 +10,28 @@
 
     <title>Snake Game</title>
 </head>
-<body>
-    <h1>SNAKE GAME!</h1>
-    <div class="painel">
-        <div class="score">
-            <p>SCORE:</p><span id="score"></span>
-        </div>
-        <div class="speed">
-            <p>Speed:</p>
-            <form>
-                <input type="radio" name="speed" id="1x" value="1" checked >
-                <label for="1x">1x</label>
+    <body>
+        <img class="dirtbg" src="/images/terra-grama.jpg" alt="">
+        <h1>SNAKE GAME!</h1>
+        <div class="painel">
+            <div class="score">
+                <p>SCORE:</p><span id="score"></span>
+            </div>
+            <div class="speed">
+                <p>Speed:</p>
+                <form>
+                    <input type="radio" name="speed" id="1x" value="1" checked >
+                    <label for="1x">1x</label>
 
-                <input type="radio" name="speed" id="2x" value="1.5">
-                <label for="2x">1.5x</label>
+                    <input type="radio" name="speed" id="2x" value="1.5">
+                    <label for="2x">1.5x</label>
 
-                <input type="radio" name="speed" id="3x" value="2">
-                <label for="3x">2x</label>
-            </form>
+                    <input type="radio" name="speed" id="3x" value="2">
+                    <label for="3x">2x</label>
+                </form>
+            </div>
+            <button onclick=restartGame()>Restart</button>
         </div>
-        <button onclick=restartGame()>Restart</button>
-    </div>
-    <canvas id="snake" width="512" height="512"></canvas>
-</body>
+        <canvas id="snake" width="512" height="512"></canvas>
+    </body>
 </html>
